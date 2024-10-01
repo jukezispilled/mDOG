@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-50%);
+  }
+}
+
+.floating-container {
+  position: fixed;
+  left: 70%;
+  bottom: -100%;
+  transition: bottom 1s ease-in-out;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-container.visible {
+  bottom: -10px;
+}
