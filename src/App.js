@@ -163,7 +163,7 @@ const FloatingImageWithChat = () => {
         className='w-full'
       />
       <div
-        className='absolute -top-[35px] -left-[35px] md:top-[10px] md:left-[10px]'
+        className='absolute -top-[70px] -left-[50px] md:top-[10px] md:left-[10px]'
         style={{
           backgroundColor: 'transparent',
           padding: '10px',
