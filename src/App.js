@@ -183,10 +183,15 @@ function App() {
   return (
     <ThemeProvider theme={original}>
       <div className="min-h-screen flex justify-center items-center">
+        <div className='absolute top-4'>
+          <Window>
+            <div className='text-xs font-semibold'>CA: XXXXXXXXXXXX</div>
+          </Window>
+        </div>
         <video autoPlay loop muted playsInline className="background-video">
           <source src="vid.mp4" type="video/mp4" />
         </video>
-        <div className="flex justify-center items-center h-full py-[5%]">
+        <div className="flex justify-center items-center h-full py-[15%] md:py-[5%]">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 content-center">
             <TradingSimulator title="mDOG" imageSrc="dog.png" initialPrice={0.00012}/>
             <TradingSimulator title="MOODENG" imageSrc="/m.jpeg" initialPrice={0.00012}/>
